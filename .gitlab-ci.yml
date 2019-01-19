@@ -1,0 +1,5 @@
+deploy:
+  stage: deploy
+  image: google/cloud-sdk
+  script:
+    - gcloud functions deploy time --runtime go111 --trigger-http
