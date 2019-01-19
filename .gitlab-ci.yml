@@ -1,5 +1,8 @@
 deploy:
   stage: deploy
   image: google/cloud-sdk
+  before_script:
+    - echo $DEPLOY_KEY_FILE > /tmp/$CI_PIPELINE_ID.json
+    - CLOUDSDK_CONFIG=/tmp/$CI_PIPELINE_ID.json
   script:
     - gcloud functions deploy time --runtime go111 --trigger-http
