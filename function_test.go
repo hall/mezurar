@@ -14,7 +14,7 @@ func TestEntryPoint(t *testing.T) {
 		body string // input value
 		want string // expected result
 	}{
-		// beginning of a day, contempory year "zero"
+		// beginning of a day, contemporary year "zero"
 		{`{"time": "0000-01-01T00:00:00Z"}`, "6930.0|0.000"},
 		// end of a day and year
 		{`{"time": "2000-12-31T23:59:59Z"}`, "7b18.b|26.bbb"},

@@ -8,7 +8,7 @@ both are periods with useful frequencies.
   - 1 year = 1 revolution of the Earth around the Sun
   - 1 day = 1 the rotation of the Earth on its axis
 
-These definitions correspond to their contempory usage (note that they are closely tied to the planet Earth).
+These definitions correspond to their contemporary usage (note that they are closely tied to the planet Earth).
 This package departs convention by removing the arbitrary complexity of the remaining units (minutes, seconds, . . . );
 
 Unfortunately, the frequencies are irreconcilable;
@@ -31,7 +31,7 @@ type Time struct {
 	day  string
 }
 
-// Entrypoint is the serverless entrypoint.
+// EntryPoint is the serverless entrypoint.
 func EntryPoint(w http.ResponseWriter, r *http.Request) {
 
 	var d struct {
