@@ -5,4 +5,6 @@ deploy:
     - echo $DEPLOY_KEY_FILE > /tmp/$CI_PIPELINE_ID.json
     - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
   script:
-    - gcloud functions deploy time --runtime go111 --trigger-http --project bryton
+    - gcloud functions deploy time \
+             --runtime go111 --trigger-http --project bryton \
+             --memory 128 --timeout 10 --entry-point EntryPoint
