@@ -57,7 +57,7 @@ func request(body string, t *testing.T) []byte {
 	req.Header.Add("Content-Type", "application/json")
 
 	rr := httptest.NewRecorder()
-	EntryPoint(rr, req)
+	entryPoint(rr, req)
 
 	out, err := ioutil.ReadAll(rr.Result().Body)
 	if err != nil {

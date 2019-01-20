@@ -1,12 +1,12 @@
 /*
-Package T returns the protosocial time.
+Package T provides the protosocial time.
 
 The two main units of measurement are the day and the year.
 This is a consequence of their convenience;
 both are periods with useful frequencies.
 
-  - 1 year = 1 revolution of the Earth around the Sun
-  - 1 day = 1 the rotation of the Earth on its axis
+  1 year = 1 revolution of the Earth around the Sun
+  1 day  = 1 the rotation of the Earth on its axis
 
 These definitions correspond to their contemporary usage (note that they are closely tied to the planet Earth).
 This package departs convention by removing the arbitrary complexity of the remaining units (minutes, seconds, . . . );
@@ -48,7 +48,7 @@ func Conv(t _time.Time) string {
 	return year + "." + month + "|" + day + "." + hour + minute + second
 }
 
-// Now returns the current Time
+// Now returns the current Time.
 func Now() string {
 	return Conv(_time.Now().UTC())
 }

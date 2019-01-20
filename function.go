@@ -8,7 +8,7 @@ import (
 )
 
 // EntryPoint is the serverless entrypoint.
-func EntryPoint(w http.ResponseWriter, r *http.Request) {
+func entryPoint(w http.ResponseWriter, r *http.Request) {
 
 	var d struct {
 		Time string `json:"time"`
