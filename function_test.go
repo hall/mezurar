@@ -1,4 +1,4 @@
-package time
+package T
 
 import (
 	"io/ioutil"
