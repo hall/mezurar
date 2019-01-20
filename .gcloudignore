@@ -12,3 +12,5 @@
 # below:
 .git
 .gitignore
+LICENSE
+README.md

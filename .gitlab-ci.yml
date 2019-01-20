@@ -25,4 +25,4 @@ deploy:
   script:
     - gcloud functions deploy time
       --runtime go111 --trigger-http --project bryton
-      --memory 128 --timeout 10 --entry-point EntryPoint
+      --memory 128 --timeout 10 --entry-point entryPoint

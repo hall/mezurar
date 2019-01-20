@@ -9,9 +9,9 @@ both are periods with useful frequencies.
   1 day  = 1 the rotation of the Earth on its axis
 
 These definitions correspond to their contemporary usage (note that they are closely tied to the planet Earth).
-This package departs convention by removing the arbitrary complexity of the remaining units (minutes, seconds, . . . );
+This package departs from convention by removing the arbitrary complexity of the remaining units (minutes, seconds, . . . );
 
-Unfortunately, the frequencies are irreconcilable;
+Unfortunately, these frequencies are irreconcilable;
 that is, we cannot evenly divide a year into whole days.
 This is the source of the greatest complexity in this system of measurement.
 */
