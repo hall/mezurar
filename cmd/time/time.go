@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	T "gitlab.com/protosocial/time"
+	"gitlab.com/hall/measure/time"
 )
 
 func main() {

@@ -1,32 +1,15 @@
 /*
 Package T provides the protosocial time.
 
-The two main units of measurement are the day and the year.
-This is a consequence of their convenience;
-both are periods with useful frequencies.
-
-  1 year = 1 revolution of the Earth around the Sun
-  1 day  = 1 the rotation of the Earth on its axis
-
-These definitions correspond to their contemporary usage (note that they are closely tied to the planet Earth).
-This package departs from convention by removing the arbitrary complexity of the remaining units (minutes, seconds, . . . );
-
-Unfortunately, these frequencies are irreconcilable;
-that is, we cannot evenly divide a year into whole days.
-This is the source of the greatest complexity in this system of measurement.
+This root package defines a universal time;
+for more pragmatic, planetary-specific times, see the subpackages.
 */
-package T // import "gitlab.com/protosocial/time"
+package T // import "gitlab.com/hall/measure/time"
 
 import (
 	"strconv"
 	_time "time"
 )
-
-// Time is the standard protosocial time.
-type Time struct {
-	year string
-	day  string
-}
 
 // Conv converts a time to prototime.
 func Conv(t _time.Time) string {

@@ -1,4 +1,4 @@
-package T
+package measure
 
 import (
 	"io/ioutil"
@@ -6,6 +6,8 @@ import (
 	"strings"
 	"testing"
 	_time "time"
+
+	"gitlab.com/hall/measure/time"
 )
 
 func TestEntryPoint(t *testing.T) {
@@ -45,8 +47,8 @@ func TestEntryPoint(t *testing.T) {
 
 func TestNow(t *testing.T) {
 
-	_now := Conv(_time.Now().UTC())
-	now := Now()
+	_now := T.Conv(_time.Now().UTC())
+	now := T.Now()
 	if now != _now {
 		t.Errorf("Now(): expected %s, actual %s", _now, now)
 	}
